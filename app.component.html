@@ -3,9 +3,9 @@
   <!-- <app-signUp></app-signUp> -->
   </div>
   
-  <app-practice></app-practice>
+  <!-- <app-practice></app-practice> -->
 
-  <div>
+  <!-- <div>
     <ul class="nav nav-tab">
       <li class="nav-item">
         <a class="nav-link" routerLink="/login">Login</a>
@@ -14,6 +14,8 @@
         <a class="nav-link" href="/sign-up">SignUp</a>
       </li>
     </ul>
-  </div>
+  </div> -->
+
+  <app-practice [child] = "parent" ></app-practice>
 
   <router-outlet></router-outlet>
