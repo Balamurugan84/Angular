@@ -20,3 +20,24 @@
 <h4>{{product.price}}</h4>
 <button type="submit" (click)="increase()">increase</button><br><br>
 <button type="submit" (click)="decrease()">increase</button>
+
+
+<!--  -->
+<div >
+    <table class="table">
+      <thead>
+        <tr> 
+          <th>name</th>
+          <th>role</th>
+          <th>year</th>
+        </tr>
+      </thead>
+      <tbody *ngFor = "let agent of child">
+        <tr>
+          <td>{{agent.name}}</td>
+          <td>{{agent.role}}</td>
+          <td>{{agent.year}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
