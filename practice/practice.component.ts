@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { TestService } from '../test.service';
 
 @Component({
@@ -27,12 +27,20 @@ export class PracticeComponent implements OnInit {
 
   constructor(public product:TestService) { }
 
+  @Input('child') child : any
+
   ngOnInit(): void {
   }
 
   increase(){
     this.product.increaceprice()
   }
+
+  decrease(){
+    this.product.decreaceprice()
+  }
+
+}
 
   decrease(){
     this.product.decreaceprice()
